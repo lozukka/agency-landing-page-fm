@@ -189,12 +189,18 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 1.5rem;
+  }
+  #testimonials h2 {
+    color: var(--grey400);
+    text-transform: uppercase;
   }
   .testimonial {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
   .testimonial-profile-image {
     width: 75px;
@@ -203,5 +209,15 @@
   .testimonial-profile-image img {
     border-radius: 50%;
     width: 100%;
+  }
+  .testimonial-text {
+    text-align: center;
+    color: var(--grey600);
+  }
+  .testimonial-name {
+    margin-block: 0;
+  }
+  .testimonial-role {
+    color: var(--grey400);
   }
 }
