@@ -1,42 +1,97 @@
-/* barlow-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  src: url(".assets/fonts/barlow-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* fraunces-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./assets/fonts/fraunces-v38-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* fraunces-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./assets/fonts/fraunces-v38-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-:root {
-  --red400: hsl(7, 99%, 70%);
-  --yellow500: hsl(7, 99%, 70%);
-  --green500: hsl(167, 34%, 41%);
-  --green800: hsl(167, 40%, 24%);
-  --blue800: hsl(198, 62%, 26%);
-  --grey950: hsl(212, 27%, 19%);
-  --grey600: hsl(213, 9%, 39%);
-  --grey550: hsl(232, 10%, 55%);
-  --grey400: hsl(210, 4%, 67%);
-  --white: hsl(0, 100%, 100%);
-}
+@layer global {
+  /* barlow-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/barlow-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* fraunces-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/fraunces-v38-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* fraunces-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    src: url("./assets/fonts/fraunces-v38-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  :root {
+    --red400: hsl(7, 99%, 70%);
+    --yellow500: hsl(7, 99%, 70%);
+    --green500: hsl(167, 34%, 41%);
+    --green800: hsl(167, 40%, 24%);
+    --blue800: hsl(198, 62%, 26%);
+    --grey950: hsl(212, 27%, 19%);
+    --grey600: hsl(213, 9%, 39%);
+    --grey550: hsl(232, 10%, 55%);
+    --grey400: hsl(210, 4%, 67%);
+    --white: hsl(0, 100%, 100%);
+    --fs-18px: calc(18 / 16 * 1rem);
+  }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-size: var(--fs-18px);
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: "Fraunces";
+    font-weight: 900;
+  }
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces";
+    font-weight: 700;
+  }
+  .visually-hidden {
+    display: none;
+  }
+}
+@layer header {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  nav {
+    display: none;
+  }
+}
+@layer hero {
+  main {
+    margin-top: -60px;
+  }
+  .hero {
+    background-image: url("./assets/images/mobile/image-header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 500px;
+    padding: 1rem;
+  }
+  h1 {
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
 }
