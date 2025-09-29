@@ -221,3 +221,34 @@
     color: var(--grey400);
   }
 }
+@layer projects {
+  #projects-section {
+    width: 100%;
+    display: grid;
+    grid-template:
+      "milk oranges"
+      "cone sugar";
+    height: 300px;
+  }
+  .projects-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #milk {
+    background-image: url("./assets/images/mobile/image-gallery-milkbottles.jpg");
+    grid-area: milk;
+  }
+  #orange {
+    background-image: url("./assets/images/mobile/image-gallery-orange.jpg");
+    grid-area: oranges;
+  }
+  #cone {
+    background-image: url("./assets/images/mobile/image-gallery-cone.jpg");
+    grid-area: cone;
+  }
+  #sugar {
+    background-image: url("./assets/images/mobile/image-gallery-sugar-cubes.jpg");
+    grid-area: sugar;
+  }
+}
