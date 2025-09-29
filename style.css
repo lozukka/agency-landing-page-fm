@@ -181,3 +181,27 @@
     color: var(--blue800);
   }
 }
+@layer testimonials {
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-profile-image {
+    width: 75px;
+    height: 75px;
+  }
+  .testimonial-profile-image img {
+    border-radius: 50%;
+    width: 100%;
+  }
+}
