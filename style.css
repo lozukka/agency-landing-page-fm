@@ -108,6 +108,7 @@
     width: 100%;
     height: 100%;
     top: calc(28px + 2rem);
+    right: 0;
   }
   nav {
     display: flex;
