@@ -279,6 +279,24 @@
   #photography-text {
     color: var(--blue800);
   }
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    #services-section {
+      display: flex;
+    }
+    .services {
+      width: 50%;
+      background-position: top;
+    }
+    #graphic-design {
+      background-image: url("./assets/images/desktop/image-graphic-design.jpg");
+    }
+    #photography {
+      background-image: url("./assets/images/desktop/image-photography.jpg");
+    }
+    .services-text {
+      width: 50%;
+    }
+  }
 }
 @layer testimonials {
   #testimonials {
