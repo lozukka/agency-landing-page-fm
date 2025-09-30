@@ -60,14 +60,14 @@
     margin-block: 1rem;
   }
   h1 {
-    font-family: "Fraunces";
+    font-family: "Fraunces", "Times New Roman", Times, serif;
     font-weight: 900;
     margin-block: 0;
   }
   h2,
   h3,
   h4 {
-    font-family: "Fraunces";
+    font-family: "Fraunces", "Times New Roman", Times, serif;
     font-weight: 700;
     color: var(--grey950);
     margin-block: 1rem;
@@ -123,7 +123,7 @@
     padding: 1rem;
     border-radius: 30px;
     font-weight: 700;
-    font-family: "Fraunces";
+    font-family: "Fraunces", "Times New Roman", Times, serif;
   }
 }
 @layer hero {
@@ -192,7 +192,7 @@
     text-transform: uppercase;
     color: var(--grey950);
     font-weight: 900;
-    font-family: "Fraunces";
+    font-family: "Fraunces", "Times New Roman", Times, serif;
   }
 }
 @layer services {
