@@ -147,6 +147,12 @@
       background: none;
       flex-direction: row;
     }
+    nav a {
+      color: var(--white);
+    }
+    nav a:last-child {
+      background: var(--white);
+    }
   }
 }
 @layer hero {
