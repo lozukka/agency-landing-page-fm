@@ -139,12 +139,12 @@
     #nav-wrapper {
       display: flex;
       align-items: flex-end;
-      width: 100%;
       justify-content: end;
       position: static;
     }
     nav {
       background: none;
+      width: 100%;
       flex-direction: row;
     }
     nav a {
@@ -305,7 +305,8 @@
   }
 }
 @layer testimonials {
-  #testimonials {
+  #testimonials,
+  .testimonial-cards {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -430,12 +431,14 @@
   #footer-links {
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
     width: 350px;
   }
   #footer-icons {
     display: flex;
     justify-content: space-between;
     width: 300px;
+    padding: 0 2rem;
     margin-top: 2rem;
   }
   #footer-links a {
