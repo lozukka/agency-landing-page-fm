@@ -244,6 +244,8 @@
   #testimonials h2 {
     color: var(--grey400);
     text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
   }
   .testimonial {
     display: flex;
@@ -262,13 +264,17 @@
   }
   .testimonial-text {
     text-align: center;
-    color: var(--grey600);
+    color: var(--grey550);
+    line-height: 1.7;
+    font-size: 1rem;
   }
   .testimonial-name {
     margin-block: 0;
+    font-size: 1.2rem;
   }
   .testimonial-role {
     color: var(--grey400);
+    font-size: 0.7rem;
   }
 }
 @layer projects {
@@ -312,7 +318,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
   #footer-links {
     display: flex;
@@ -323,6 +329,7 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    margin-top: 2rem;
   }
   #footer-links a {
     text-decoration: none;
