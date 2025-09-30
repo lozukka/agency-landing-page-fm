@@ -37,6 +37,7 @@
     --fs-18px: calc(18 / 16 * 1rem);
     --fs-45px: calc(45 / 16 * 1rem);
     --fs-500px: calc(500 / 16 * 1rem);
+    --fs-800px: calc (800 / 16 * 1rem);
   }
 
   * {
@@ -63,6 +64,10 @@
     font-family: "Fraunces", "Times New Roman", Times, serif;
     font-weight: 900;
     margin-block: 0;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    text-align: center;
   }
   h2,
   h3,
@@ -74,6 +79,11 @@
   }
   .visually-hidden {
     display: none;
+  }
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    h1 {
+      font-size: 4rem;
+    }
   }
 }
 @layer header {
@@ -98,9 +108,6 @@
     width: 100%;
     height: 100%;
     top: calc(28px + 2rem);
-  }
-  .show {
-    display: block;
   }
   nav {
     display: flex;
@@ -130,7 +137,15 @@
       display: none;
     }
     #nav-wrapper {
-      display: block;
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      justify-content: end;
+      position: static;
+    }
+    nav {
+      background: none;
+      flex-direction: row;
     }
   }
 }
@@ -151,11 +166,12 @@
     height: var(--fs-500px);
     padding: 1rem;
   }
-  h1 {
-    text-transform: uppercase;
-    color: var(--white);
-    letter-spacing: 0.5rem;
-    text-align: center;
+
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    .hero {
+      background-image: url("./assets/images/desktop/image-header.jpg");
+      height: 800px;
+    }
   }
 }
 @layer about {
@@ -201,6 +217,32 @@
     color: var(--grey950);
     font-weight: 900;
     font-family: "Fraunces", "Times New Roman", Times, serif;
+  }
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    .about {
+      display: flex;
+      flex-direction: row;
+    }
+    .about-image {
+      width: 50%;
+    }
+    .about-content {
+      width: 50%;
+      text-align: left;
+      padding-left: 6rem;
+    }
+    .about-text {
+      width: 60%;
+    }
+    #about-transform {
+      background-image: url("./assets/images/desktop/image-transform.jpg");
+    }
+    #about-stand-out {
+      background-image: url("./assets/images/desktop/image-stand-out.jpg");
+    }
+    #transform {
+      flex-direction: row-reverse;
+    }
   }
 }
 @layer services {
