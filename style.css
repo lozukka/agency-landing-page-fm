@@ -133,6 +133,12 @@
     font-family: "Fraunces", "Times New Roman", Times, serif;
   }
   @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    header {
+      padding: 1rem 3rem;
+    }
+    #logo {
+      width: 50%;
+    }
     button {
       display: none;
     }
@@ -141,6 +147,7 @@
       align-items: flex-end;
       justify-content: end;
       position: static;
+      width: 50%;
     }
     nav {
       background: none;
