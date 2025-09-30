@@ -122,6 +122,7 @@
   nav a {
     text-decoration: none;
     color: var(--grey400);
+    cursor: pointer;
   }
   nav a:last-child {
     background: var(--yellow500);
@@ -159,6 +160,10 @@
     }
     nav a:last-child {
       background: var(--white);
+    }
+    nav a:last-child:hover {
+      background: var(--blue800);
+      color: var(--white);
     }
   }
 }
@@ -298,6 +303,7 @@
     }
     .services {
       width: 50%;
+      height: 650px;
       background-position: top;
     }
     #graphic-design {
@@ -364,6 +370,7 @@
     }
     .testimonial-cards {
       display: flex;
+      flex-direction: row;
       width: 100%;
       padding: 0 3rem;
       gap: 1.5rem;
@@ -441,6 +448,9 @@
     padding: 0 2rem;
     width: 350px;
   }
+  #footer-links a:hover {
+    color: var(--white);
+  }
   #footer-icons {
     display: flex;
     justify-content: space-between;
@@ -454,5 +464,8 @@
   }
   #footer-icons a {
     text-decoration: none;
+  }
+  #footer-icons a svg path:hover {
+    fill: #fff;
   }
 }
