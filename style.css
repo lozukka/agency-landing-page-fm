@@ -390,6 +390,24 @@
     background-image: url("./assets/images/mobile/image-gallery-sugar-cubes.jpg");
     grid-area: sugar;
   }
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    #projects-section {
+      grid-template: "milk oranges cone sugar";
+      height: 450px;
+    }
+    #milk {
+      background-image: url("./assets/images/desktop/image-gallery-milkbottles.jpg");
+    }
+    #orange {
+      background-image: url("./assets/images/desktop/image-gallery-orange.jpg");
+    }
+    #cone {
+      background-image: url("./assets/images/desktop/image-gallery-cone.jpg");
+    }
+    #sugar {
+      background-image: url("./assets/images/desktop/image-gallery-sugarcubes.jpg");
+    }
+  }
 }
 @layer footer {
   footer {
@@ -406,12 +424,12 @@
   #footer-links {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 350px;
   }
   #footer-icons {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 300px;
     margin-top: 2rem;
   }
   #footer-links a {
