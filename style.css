@@ -125,6 +125,14 @@
     font-weight: 700;
     font-family: "Fraunces", "Times New Roman", Times, serif;
   }
+  @media screen and (min-width: calc(1440 / 16 * 1rem)) {
+    button {
+      display: none;
+    }
+    #nav-wrapper {
+      display: block;
+    }
+  }
 }
 @layer hero {
   main {
